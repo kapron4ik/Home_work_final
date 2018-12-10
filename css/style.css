@@ -184,7 +184,7 @@ a{
 }
 
 .slider{
-	background: url(../img/Slider-bg.png) #7a7470; /*#888481*/
+	background: url(../img/Slider-bg.png) #fff; /*#888481*/
 	background-repeat: no-repeat;
 	height: 690px;
 	background-size: contain;
