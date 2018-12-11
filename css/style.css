@@ -117,6 +117,7 @@ a{
 }
 .icons1 div:hover  {
 	border:2px solid rgba(36,36,36,0.5);
+	cursor: pointer;
 }	
 .icons1 div:hover .icon{
 	color: rgba(36,36,36,0.5);
@@ -399,6 +400,7 @@ a{
 .button_left:hover, .button_right:hover, .button_center:hover {
 	background-color: rgba(36,36,36,0.5);
 	color: #000;
+	cursor: pointer;
 }
 
 .button_left:hover:after, .button_right:hover:after {
@@ -671,6 +673,7 @@ td {
 }
 .icons2 div:hover  {
 	background-color: #6d6d6d;
+	cursor: pointer;
 }	
 .icons2 div:hover .icon{
 	color: rgba(36,36,36,0.5);
@@ -683,7 +686,7 @@ td {
 }
 
 .email {
-	width: 362px;
+/*	width: 362px;*/
 	border:1px solid #323030;
 	padding: 3px;
 	margin-top: 57px;
@@ -696,7 +699,7 @@ td {
 	color: #fff;
 	outline:none;
 	padding-left: 20px;
-	padding-right: 79px;
+	padding-right: 75px;
 }
 
 .email input::placeholder {
@@ -711,6 +714,7 @@ td {
 	color: #fff;
 	width: 100px;
 	height: 32px;
+	cursor: pointer;
 }
 
 .footer_bottom {
