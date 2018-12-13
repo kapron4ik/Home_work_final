@@ -198,6 +198,7 @@ a{
 	left: 50%;
 	margin-left: -114px;
 	top: -90px;
+	cursor: pointer;
 }
 
 .border_external {
@@ -320,6 +321,7 @@ a{
 	margin-left: -94px;
 	top: 640px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .carousel div{
@@ -350,6 +352,7 @@ a{
 	transform: rotate(45deg);
 	border-left:2px solid #fff;
 	border-bottom:2px solid #fff;
+	cursor: pointer;
 }
 
 .shape_right {
@@ -361,6 +364,7 @@ a{
 	transform: rotate(225deg);
 	border-left:2px solid #fff;
 	border-bottom:2px solid #fff;
+	cursor: pointer;
 }
 
 .shape_left:hover, .shape_right:hover {
@@ -484,11 +488,14 @@ a{
 	background-color: #d9bf8f;
 }
 
-.table	{
+.table	ul{
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 62px;
 	margin-bottom: 94px;
 	border:1px solid #eaeaea;
 	text-align:center;
+	padding: 8px;
 }
 
 .table img{
@@ -536,29 +543,44 @@ a{
 		margin-top:130px;}
 }
 
-tr{
-	display: inline-block;
-	padding: 9px;
-}
-
-td {
+.table li {
 	position: relative;
-
 }
 
-.table tr:nth-child(1) {
-	padding-bottom: 0;
+.table a {
+	display: block;
 }
 
-.table tr:nth-child(2) {
-	padding-top: 0;
-}
-
-.table td:hover .like {
+.table li:hover .like {
 	display: block;
 }
 
 .trapezoid {
+	border-bottom: 40px solid #000;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0;
+	width: 146px;
+	position: absolute;
+	bottom:0%;
+	margin-bottom: 11px;
+	left: 50%;
+	margin-left: -113px;
+}
+
+.trapezoid p{
+	color:#fff;
+	position: absolute;
+	top:11px;
+	left:10px;
+}
+
+.trapezoid:hover {
+	border-bottom: 40px solid #f0975c;
+}
+
+
+/*.trapezoid {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -603,7 +625,7 @@ td {
 
 .trapezoid:hover:before, .trapezoid:hover:after {
 	border-color: transparent #f0975c;
-}
+}*/
 
 .sale {
 	display: block;
@@ -618,16 +640,16 @@ td {
 	line-height: 60px;
 }
 
-.table tr:nth-child(1) td:nth-child(2) .sale{
+.table li:nth-child(2) .sale{
 	display: none;
 }
-.table tr:nth-child(1) td:nth-child(3) .sale{
+.table li:nth-child(3) .sale{
 	display: none;
 }
-.table tr:nth-child(2) td:nth-child(2) .sale{
+.table li:nth-child(6) .sale{
 	display: none;
 }
-.table tr:nth-child(2) td:nth-child(3) .sale{
+.table li:nth-child(7) .sale{
 	display: none;
 }
 
